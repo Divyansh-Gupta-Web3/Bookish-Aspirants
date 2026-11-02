@@ -3,7 +3,7 @@ const CONTENT_REPO = 'Bookish';
 const CONTENT_FILE = 'site-content.enc.json';
 const CONTENT_BRANCH = 'main';
 
-const SITE_REPO = 'Bookish-Aspirant';
+const SITE_REPO = 'Bookish-Aspirants';
 const SITE_WORKFLOW = 'deploy.yml';
 const SITE_BRANCH = 'main';
 
