@@ -4,7 +4,7 @@ const CONTENT_FILE = 'site-content.enc.json';
 const CONTENT_BRANCH = 'main';
 
 const SITE_REPO = 'Bookish-Aspirants';
-const SITE_WORKFLOW = 'deploy.yml';
+const SITE_WORKFLOW = 'nextjs.yml';
 const SITE_BRANCH = 'main';
 
 const CONTENTS_URL = `https://api.github.com/repos/${CONTENT_OWNER}/${CONTENT_REPO}/contents/${CONTENT_FILE}`;
