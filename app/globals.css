@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 55% 91%;
+    --foreground: 16 19% 23%;
+    --card: 36 60% 97%;
+    --card-foreground: 16 19% 23%;
+    --popover: 36 60% 97%;
+    --popover-foreground: 16 19% 23%;
+    --primary: 348 32% 36%;
+    --primary-foreground: 36 60% 97%;
+    --secondary: 33 43% 84%;
+    --secondary-foreground: 16 19% 23%;
+    --muted: 33 43% 87%;
+    --muted-foreground: 16 12% 40%;
+    --accent: 349 33% 66%;
+    --accent-foreground: 348 32% 20%;
+    --destructive: 6 50% 40%;
+    --destructive-foreground: 36 60% 97%;
+    --border: 33 30% 76%;
+    --input: 33 30% 76%;
+    --ring: 348 32% 36%;
+    --chart-1: 348 32% 36%;
+    --chart-2: 349 33% 66%;
+    --chart-3: 102 16% 52%;
+    --chart-4: 38 60% 46%;
+    --chart-5: 16 19% 23%;
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    @apply bg-background font-body text-foreground antialiased;
+    line-height: 1.5;
+    background-color: theme('colors.parchment.100');
+    background-image:
+      radial-gradient(ellipse at 12% 0%, rgba(251, 242, 225, 0.9), transparent 55%),
+      radial-gradient(ellipse at 92% 100%, rgba(121, 63, 75, 0.07), transparent 50%);
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -20;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><filter id='c' x='0' y='0'><feTurbulence type='fractalNoise' baseFrequency='0.006 0.009' numOctaves='5' seed='11' result='n'/><feDiffuseLighting in='n' lighting-color='%23f6ead2' surfaceScale='3.5' diffuseConstant='1.1' result='d'><feDistantLight azimuth='235' elevation='52'/></feDiffuseLighting><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='4' result='g'/><feColorMatrix in='g' type='matrix' values='0 0 0 0 0.36 0 0 0 0 0.27 0 0 0 0 0.19 0 0 0 0.12 0' result='gs'/><feMerge><feMergeNode in='d'/><feMergeNode in='gs'/></feMerge></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>");
+    background-size: 600px 600px;
+    opacity: 0.55;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    pointer-events: none;
+    background-image: radial-gradient(ellipse at center, transparent 58%, rgba(92, 58, 26, 0.16) 100%);
+    mix-blend-mode: multiply;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink-800;
+    line-height: 1.2;
+    text-shadow: 0 1px 0 rgba(255, 249, 236, 0.7);
+  }
+
+  :focus-visible {
+    outline: 2px solid theme('colors.burgundy.700');
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background-color: rgba(121, 63, 75, 0.2);
+  }
+
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+@layer components {
+  .paper-texture {
+    @apply bg-parchment-50;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.27 0 0 0 0 0.21 0 0 0 0 0.18 0 0 0 0.14 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: perspective(1600px) rotateY(-22deg) translate3d(-40px, 0, 0);
+    transform-origin: left center;
+    transition:
+      opacity 1000ms ease-out var(--reveal-delay, 0ms),
+      transform 1100ms cubic-bezier(0.2, 0.7, 0.2, 1) var(--reveal-delay, 0ms);
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .page-enter {
+    animation: page-enter 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .book-cover-open {
+    animation: cover-open 2100ms cubic-bezier(0.65, 0, 0.25, 1) 500ms both;
+  }
+
+  .book-open-in {
+    transform-origin: left center;
+    animation: book-open-in 1200ms cubic-bezier(0.2, 0.7, 0.2, 1) 150ms both;
+  }
+
+  .ruled-paper {
+    background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, rgba(122, 104, 97, 0.28) 31px, rgba(122, 104, 97, 0.28) 32px);
+    background-position: 0 16px;
+  }
+
+  .nav-underline {
+    @apply relative;
+  }
+
+  .nav-underline::after {
+    content: '';
+    @apply absolute inset-x-0 -bottom-1 h-px origin-left scale-x-0 bg-burgundy-700 transition-transform duration-500 ease-out;
+  }
+
+  .nav-underline:hover::after,
+  .nav-underline:focus-visible::after {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes cover-open {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-180deg);
+  }
+}
+
+@keyframes book-open-in {
+  from {
+    opacity: 0;
+    transform: perspective(1600px) rotateY(-75deg) rotate(-2deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1600px) rotateY(0deg) rotate(-2deg);
+  }
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes book-flutter {
+  0%,
+  100% {
+    transform: rotate(var(--tilt)) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(calc(var(--tilt) + 8deg)) translate3d(-3px, -6px, 0) scaleY(0.94);
+  }
+  50% {
+    transform: rotate(calc(var(--tilt) - 6deg)) translate3d(3px, -10px, 0);
+  }
+  75% {
+    transform: rotate(calc(var(--tilt) + 4deg)) translate3d(-2px, -4px, 0);
+  }
+}
+
+.floating-book {
+  transform: rotate(var(--tilt));
+  transition: opacity 500ms ease-out;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .floating-book:hover,
+  .floating-book:active {
+    animation: book-flutter 900ms ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

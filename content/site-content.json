@@ -1,0 +1,596 @@
+{
+  "site": {
+    "name": "Bookish Aspirant",
+    "creator": "The Silent Reader",
+    "tagline": "A little corner for readers, dreamers & book lovers.",
+    "email": "mybookishworlds@gmail.com",
+    "instagramUrl": "https://www.instagram.com/bookish_aspirant",
+    "affiliateDisclosure": "Bookish Aspirant is a participant in the Amazon Associates programme and the Flipkart affiliate programme. When you buy through the links on this site, I may earn a small commission at no extra cost to you."
+  },
+  "hero": {
+    "headline": "Every book has a story. Every reader has a world."
+  },
+  "books": [
+    {
+      "slug": "yaar-papa",
+      "title": "Yaar Papa",
+      "author": "Divya Prakash",
+      "genre": "Classic Romance",
+      "categories": [
+        "romance",
+        "fiction"
+      ],
+      "tone": "burgundy",
+      "rating": 4.5,
+      "personalNote": "Jane refuses to be small, and that stubborn spirit made me fall in love with the book long before I fell for Rochester.",
+      "coverImage": "https://m.media-amazon.com/images/I/71UchDE8PQL._SY466_.jpg",
+      "buyLink": "https://www.amazon.in/Yaar-Papa-%E0%A4%A6%E0%A4%BF%E0%A4%B5%E0%A5%8D%E0%A4%AF-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B6-%E0%A4%89%E0%A4%AA%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B8/dp/9392820844/ref=asc_df_9392820844?mcid=50ab52fe537e30599c05fdc8d7830f94&tag=googleshopdes-21&linkCode=df0&hvadid=709881838702&hvpos=&hvnetw=g&hvrand=8728564340458669751&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007785&hvtargid=pla-2262960103387&psc=1&hvocijid=8728564340458669751-9392820844-&hvexpln=0&gad_source=1"
+    },
+    {
+      "slug": "pride-and-prejudice",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "categories": [
+        "romance"
+      ],
+      "tone": "parchment",
+      "rating": 5,
+      "personalNote": "Every reread finds a new layer of wit. It is the book I recommend first to anyone who says they do not like classics.",
+      "coverImage": "https://images.pexels.com/photos/19905625/pexels-photo-19905625.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Pride%20and%20Prejudice%20Jane%20Austen"
+    },
+    {
+      "slug": "wuthering-heights",
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "genre": "Gothic Romance",
+      "categories": [
+        "dark-romance",
+        "fiction"
+      ],
+      "tone": "ink",
+      "rating": 4,
+      "personalNote": "Wild, bleak and impossible to look away from. I read it on a stormy weekend and did not want it to end.",
+      "coverImage": "https://images.pexels.com/photos/29676328/pexels-photo-29676328.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Wuthering%20Heights%20Emily%20Bront%C3%AB"
+    },
+    {
+      "slug": "hunting-adeline",
+      "title": "Hunting Adeline",
+      "author": "H.D. Carlton",
+      "genre": "Dark Romance",
+      "categories": [
+        "dark-romance"
+      ],
+      "tone": "burgundy",
+      "rating": 3.5,
+      "personalNote": "Intense and unapologetically dark. Not for everyone, but it shows exactly what this genre can do when it commits fully.",
+      "coverImage": "https://images.pexels.com/photos/10584992/pexels-photo-10584992.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Hunting%20Adeline%20H.D.%20Carlton"
+    },
+    {
+      "slug": "beach-read",
+      "title": "Beach Read",
+      "author": "Emily Henry",
+      "genre": "Contemporary Romance",
+      "categories": [
+        "contemporary-romance"
+      ],
+      "tone": "rose",
+      "rating": 4.5,
+      "personalNote": "Warm, funny and sharper than its cover suggests. The perfect companion for a slow afternoon with a strong coffee.",
+      "coverImage": "https://images.pexels.com/photos/39637750/pexels-photo-39637750.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Beach%20Read%20Emily%20Henry"
+    },
+    {
+      "slug": "it-ends-with-us",
+      "title": "It Ends With Us",
+      "author": "Colleen Hoover",
+      "genre": "Contemporary Romance",
+      "categories": [
+        "contemporary-romance"
+      ],
+      "tone": "parchment",
+      "rating": 4,
+      "personalNote": "An emotional read that left me quiet for a long time. Keep tissues close and a friend ready to talk afterwards.",
+      "coverImage": "https://images.pexels.com/photos/17314154/pexels-photo-17314154.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=It%20Ends%20With%20Us%20Colleen%20Hoover"
+    },
+    {
+      "slug": "a-court-of-thorns-and-roses",
+      "title": "A Court of Thorns and Roses",
+      "author": "Sarah J. Maas",
+      "genre": "Fantasy Romance",
+      "categories": [
+        "fantasy",
+        "romance"
+      ],
+      "tone": "ink",
+      "rating": 4,
+      "personalNote": "A fairy tale with teeth. The world-building is lush and the slow turn of the romance is deeply satisfying.",
+      "coverImage": "https://images.pexels.com/photos/31880175/pexels-photo-31880175.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=A%20Court%20of%20Thorns%20and%20Roses%20Sarah%20J.%20Maas"
+    },
+    {
+      "slug": "the-name-of-the-wind",
+      "title": "The Name of the Wind",
+      "author": "Patrick Rothfuss",
+      "genre": "Fantasy",
+      "categories": [
+        "fantasy",
+        "hidden-gems"
+      ],
+      "tone": "burgundy",
+      "rating": 4.5,
+      "personalNote": "A storyteller telling his own legend, with a voice so warm it feels like being told a secret by a fire.",
+      "coverImage": "https://images.pexels.com/photos/38825373/pexels-photo-38825373.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=The%20Name%20of%20the%20Wind%20Patrick%20Rothfuss"
+    },
+    {
+      "slug": "circe",
+      "title": "Circe",
+      "author": "Madeline Miller",
+      "genre": "Mythic Fantasy",
+      "categories": [
+        "fantasy",
+        "fiction"
+      ],
+      "tone": "parchment",
+      "rating": 4.5,
+      "personalNote": "Ancient myth retold through a single, unforgettable voice. Every chapter felt like a small, perfect bloom.",
+      "coverImage": "https://images.pexels.com/photos/30555396/pexels-photo-30555396.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Circe%20Madeline%20Miller"
+    },
+    {
+      "slug": "and-then-there-were-none",
+      "title": "And Then There Were None",
+      "author": "Agatha Christie",
+      "genre": "Mystery",
+      "categories": [
+        "mystery-thriller"
+      ],
+      "tone": "ink",
+      "rating": 5,
+      "personalNote": "The gold standard of the locked-room mystery. I still count the characters on my fingers as I read.",
+      "coverImage": "https://images.pexels.com/photos/17323507/pexels-photo-17323507.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=And%20Then%20There%20Were%20None%20Agatha%20Christie"
+    },
+    {
+      "slug": "the-secret-history",
+      "title": "The Secret History",
+      "author": "Donna Tartt",
+      "genre": "Mystery & Thriller",
+      "categories": [
+        "mystery-thriller",
+        "fiction"
+      ],
+      "tone": "burgundy",
+      "rating": 4,
+      "personalNote": "A slow, elegant unravelling of a closed circle of students. The prose alone is worth the price of admission.",
+      "coverImage": "https://images.pexels.com/photos/9258374/pexels-photo-9258374.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=The%20Secret%20History%20Donna%20Tartt"
+    },
+    {
+      "slug": "rebecca",
+      "title": "Rebecca",
+      "author": "Daphne du Maurier",
+      "genre": "Psychological Thriller",
+      "categories": [
+        "psychological-thriller",
+        "romance"
+      ],
+      "tone": "rose",
+      "rating": 4.5,
+      "personalNote": "Manderley lingers in the mind long after the last page. A masterclass in quiet, creeping unease.",
+      "coverImage": "https://images.pexels.com/photos/39625399/pexels-photo-39625399.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Rebecca%20Daphne%20du%20Maurier"
+    },
+    {
+      "slug": "gone-girl",
+      "title": "Gone Girl",
+      "author": "Gillian Flynn",
+      "genre": "Psychological Thriller",
+      "categories": [
+        "psychological-thriller",
+        "mystery-thriller"
+      ],
+      "tone": "ink",
+      "rating": 4,
+      "personalNote": "Every chapter flips your opinion of someone. I finished it in one sitting and immediately wanted to argue about it.",
+      "coverImage": "https://images.pexels.com/photos/19328669/pexels-photo-19328669.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Gone%20Girl%20Gillian%20Flynn"
+    },
+    {
+      "slug": "the-remains-of-the-day",
+      "title": "The Remains of the Day",
+      "author": "Kazuo Ishiguro",
+      "genre": "Literary Fiction",
+      "categories": [
+        "fiction",
+        "hidden-gems"
+      ],
+      "tone": "parchment",
+      "rating": 4.5,
+      "personalNote": "A butler, a lifetime of restraint and the things left unsaid. Quiet, devastating and beautifully controlled.",
+      "coverImage": "https://images.pexels.com/photos/13556546/pexels-photo-13556546.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=The%20Remains%20of%20the%20Day%20Kazuo%20Ishiguro"
+    },
+    {
+      "slug": "the-white-tiger",
+      "title": "The White Tiger",
+      "author": "Aravind Adiga",
+      "genre": "Fiction",
+      "categories": [
+        "indian-authors",
+        "fiction"
+      ],
+      "tone": "rose",
+      "rating": 4,
+      "personalNote": "A razor-sharp, darkly funny voice that does not look away from the class divides of modern India.",
+      "coverImage": "https://images.pexels.com/photos/15102004/pexels-photo-15102004.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=The%20White%20Tiger%20Aravind%20Adiga"
+    },
+    {
+      "slug": "the-god-of-small-things",
+      "title": "The God of Small Things",
+      "author": "Arundhati Roy",
+      "genre": "Literary Fiction",
+      "categories": [
+        "indian-authors",
+        "fiction"
+      ],
+      "tone": "burgundy",
+      "rating": 4.5,
+      "personalNote": "Language that shimmers. Every sentence seems to hold a monsoon, a memory and a secret in equal measure.",
+      "coverImage": "https://images.pexels.com/photos/19208445/pexels-photo-19208445.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=The%20God%20of%20Small%20Things%20Arundhati%20Roy"
+    },
+    {
+      "slug": "malgudi-days",
+      "title": "Malgudi Days",
+      "author": "R. K. Narayan",
+      "genre": "Short Stories",
+      "categories": [
+        "indian-authors",
+        "hidden-gems"
+      ],
+      "tone": "parchment",
+      "rating": 4.5,
+      "personalNote": "Small town stories that feel like afternoons on a verandah. Gentle, funny and full of heart.",
+      "coverImage": "https://images.pexels.com/photos/19905625/pexels-photo-19905625.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Malgudi%20Days%20R.%20K.%20Narayan"
+    },
+    {
+      "slug": "atomic-habits",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "genre": "Self Help",
+      "categories": [
+        "self-help"
+      ],
+      "tone": "burgundy",
+      "rating": 4,
+      "personalNote": "Practical and kind. I wrote down two of its ideas on a sticky note and they are still on my desk.",
+      "coverImage": "https://images.pexels.com/photos/29676328/pexels-photo-29676328.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Atomic%20Habits%20James%20Clear"
+    },
+    {
+      "slug": "mans-search-for-meaning",
+      "title": "Man's Search for Meaning",
+      "author": "Viktor E. Frankl",
+      "genre": "Memoir & Philosophy",
+      "categories": [
+        "self-help",
+        "hidden-gems"
+      ],
+      "tone": "ink",
+      "rating": 5,
+      "personalNote": "Written from a concentration camp, it still feels like the most useful book I own. I return to it whenever I lose my way.",
+      "coverImage": "https://images.pexels.com/photos/10584992/pexels-photo-10584992.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Man's%20Search%20for%20Meaning%20Viktor%20E.%20Frankl"
+    },
+    {
+      "slug": "the-hunger-games",
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "genre": "Dystopian",
+      "categories": [
+        "young-adult",
+        "fantasy"
+      ],
+      "tone": "rose",
+      "rating": 4,
+      "personalNote": "Impossible to put down. A reminder of how good young adult fiction can be when it trusts its readers.",
+      "coverImage": "https://images.pexels.com/photos/39637750/pexels-photo-39637750.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=The%20Hunger%20Games%20Suzanne%20Collins"
+    },
+    {
+      "slug": "eleanor-and-park",
+      "title": "Eleanor & Park",
+      "author": "Rainbow Rowell",
+      "genre": "Young Adult Romance",
+      "categories": [
+        "young-adult",
+        "romance"
+      ],
+      "tone": "parchment",
+      "rating": 4.5,
+      "personalNote": "Awkward, tender and deeply true to the feeling of first falling for someone. I loved every mixtape reference.",
+      "coverImage": "https://images.pexels.com/photos/17314154/pexels-photo-17314154.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Eleanor%20%26%20Park%20Rainbow%20Rowell"
+    },
+    {
+      "slug": "piranesi",
+      "title": "Piranesi",
+      "author": "Susanna Clarke",
+      "genre": "Fantasy",
+      "categories": [
+        "fantasy",
+        "hidden-gems"
+      ],
+      "tone": "ink",
+      "rating": 5,
+      "personalNote": "A house with endless halls, a mind that finds wonder in every statue, and a mystery that unfolds like a tide. Quietly magical.",
+      "coverImage": "https://images.pexels.com/photos/31880175/pexels-photo-31880175.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "buyLink": "https://www.amazon.in/s?k=Piranesi%20Susanna%20Clarke"
+    }
+  ],
+  "categories": [
+    {
+      "slug": "romance",
+      "name": "Romance",
+      "description": "Slow-burning love stories, letters and the hearts that wait for them.",
+      "image": "https://images.pexels.com/photos/5761595/pexels-photo-5761595.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "slug": "dark-romance",
+      "name": "Dark Romance",
+      "description": "Obsession, danger and devotion told in candlelit shadows.",
+      "image": "https://images.pexels.com/photos/16282694/pexels-photo-16282694.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "slug": "contemporary-romance",
+      "name": "Contemporary Romance",
+      "description": "Modern love, cafe conversations and second chances.",
+      "image": "https://images.pexels.com/photos/3978283/pexels-photo-3978283.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "slug": "fantasy",
+      "name": "Fantasy",
+      "description": "Lost kingdoms, old magic and worlds that refuse to end at the last page.",
+      "image": "https://images.pexels.com/photos/4084698/pexels-photo-4084698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "slug": "mystery-thriller",
+      "name": "Mystery & Thriller",
+      "description": "Clues in the fog, locked rooms and questions that demand an answer.",
+      "image": "https://images.pexels.com/photos/10212985/pexels-photo-10212985.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "slug": "psychological-thriller",
+      "name": "Psychological Thriller",
+      "description": "Unreliable minds, quiet unease and stories that get under the skin.",
+      "image": "https://images.pexels.com/photos/17916245/pexels-photo-17916245.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "slug": "fiction",
+      "name": "Fiction",
+      "description": "Novels that hold up a mirror to ordinary lives with extraordinary care.",
+      "image": "https://images.pexels.com/photos/3804409/pexels-photo-3804409.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "slug": "self-help",
+      "name": "Self Help",
+      "description": "Small rituals, honest reflections and books that ask for a notebook.",
+      "image": "https://images.pexels.com/photos/6653890/pexels-photo-6653890.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "slug": "indian-authors",
+      "name": "Indian Authors",
+      "description": "Voices from India, rich with monsoon light, family and history.",
+      "image": "https://images.pexels.com/photos/17445317/pexels-photo-17445317.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "slug": "young-adult",
+      "name": "Young Adult",
+      "description": "Coming-of-age stories for anyone who still remembers being sixteen.",
+      "image": "https://images.pexels.com/photos/8419633/pexels-photo-8419633.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "slug": "hidden-gems",
+      "name": "Hidden Gems",
+      "description": "Quiet, under-the-radar books worth carrying home from the back shelves.",
+      "image": "https://images.pexels.com/photos/19594239/pexels-photo-19594239.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
+  ],
+  "currentlyReading": {
+    "slug": "the-god-of-small-things",
+    "personalNote": "I started this one on a rainy evening and have been reading it slowly, a few pages at a time, so the language can settle in. Each chapter asks me to stop and reread a sentence.",
+    "pagesRead": 212,
+    "totalPages": 340
+  },
+  "bookOfTheMonth": {
+    "slug": "piranesi",
+    "monthLabel": "November 2026",
+    "recommendation": "This is the book I have pressed into more hands this month than any other. It is slow, strange and tender, and it asks you to pay attention. Read it without rushing and let the halls open up around you."
+  },
+  "pairings": [
+    {
+      "first": "yaar-papa",
+      "second": "rebecca",
+      "reason": "Two brooding houses, and the women who wander through their halls looking for the truth."
+    },
+    {
+      "first": "and-then-there-were-none",
+      "second": "the-secret-history",
+      "reason": "A closed circle, a single secret and a slow, creeping unravelling."
+    },
+    {
+      "first": "circe",
+      "second": "the-name-of-the-wind",
+      "reason": "Myth and legend retold through unforgettable voices that feel like a firelit confession."
+    }
+  ],
+  "readerReviews": [
+    {
+      "bookSlug": "the-god-of-small-things",
+      "date": "October 2026",
+      "rating": 4.5,
+      "excerpt": "Reading this slowly has been a gift. The sentences hold weather, grief and laughter all at once, and I keep stopping to read them aloud."
+    },
+    {
+      "bookSlug": "piranesi",
+      "date": "September 2026",
+      "rating": 5,
+      "excerpt": "Wonder in its purest form. A book that makes an ordinary corridor feel like a cathedral, and left me wanting to wander my own house."
+    },
+    {
+      "bookSlug": "rebecca",
+      "date": "August 2026",
+      "rating": 4.5,
+      "excerpt": "The first chapter alone is perfect. Every room at Manderley feels like it is holding its breath."
+    }
+  ],
+  "latestReads": [
+    {
+      "bookSlug": "the-remains-of-the-day",
+      "finishedOn": "October 2026",
+      "note": "Quiet and devastating. Stevens says so much through what he refuses to say."
+    },
+    {
+      "bookSlug": "circe",
+      "finishedOn": "September 2026",
+      "note": "Myth retold so intimately that I forgot I was reading about gods."
+    },
+    {
+      "bookSlug": "the-secret-history",
+      "finishedOn": "August 2026",
+      "note": "Slow and elegant. The prose carried me through every unsettling turn."
+    },
+    {
+      "bookSlug": "eleanor-and-park",
+      "finishedOn": "July 2026",
+      "note": "Awkward and tender in exactly the right places. The mixtape details made me smile."
+    },
+    {
+      "bookSlug": "mans-search-for-meaning",
+      "finishedOn": "June 2026",
+      "note": "A short book with ideas that stayed with me for weeks after the last page."
+    }
+  ],
+  "favouriteQuotes": [
+    {
+      "text": "Last night I dreamt I went to Manderley again.",
+      "source": "Rebecca"
+    },
+    {
+      "text": "Whatever our souls are made of, his and mine are the same.",
+      "source": "Wuthering Heights"
+    },
+    {
+      "text": "I am no bird; and no net ensnares me: I am a free human being with an independent will.",
+      "source": "Jane Eyre"
+    }
+  ],
+  "readingNotes": [
+    "Keep a slow pace for literary fiction. Read one chapter, then write one sentence about it.",
+    "Libraries feel different in the rain. Note which books you reach for when the sky is grey.",
+    "A book you abandon is not a failure. Put a bookmark in it and come back when you are ready."
+  ],
+  "favouriteBookSlugs": [
+    "pride-and-prejudice",
+    "circe",
+    "the-remains-of-the-day",
+    "the-god-of-small-things",
+    "piranesi"
+  ],
+  "readingYear": {
+    "year": 2026,
+    "lastUpdated": "October 2026",
+    "goalBooks": 40,
+    "booksFinished": 27,
+    "pagesRead": 9860,
+    "favouriteGenre": "Literary fiction",
+    "note": "Slower than last year, and happier for it. More rereads, fewer unfinished books."
+  },
+  "moods": [
+    {
+      "id": "comfort",
+      "label": "I want a comfort read",
+      "bookSlugs": [
+        "pride-and-prejudice",
+        "beach-read",
+        "malgudi-days",
+        "eleanor-and-park"
+      ]
+    },
+    {
+      "id": "heartbreak",
+      "label": "I want a heartbreaking story",
+      "bookSlugs": [
+        "it-ends-with-us",
+        "the-remains-of-the-day",
+        "the-god-of-small-things",
+        "mans-search-for-meaning"
+      ]
+    },
+    {
+      "id": "dark-romance",
+      "label": "I want dark romance",
+      "bookSlugs": [
+        "wuthering-heights",
+        "hunting-adeline",
+        "a-court-of-thorns-and-roses",
+        "yaar-papa"
+      ]
+    },
+    {
+      "id": "plot-twist",
+      "label": "I want a plot twist",
+      "bookSlugs": [
+        "gone-girl",
+        "and-then-there-were-none",
+        "the-secret-history",
+        "rebecca"
+      ]
+    },
+    {
+      "id": "magical",
+      "label": "I want something magical",
+      "bookSlugs": [
+        "piranesi",
+        "circe",
+        "the-name-of-the-wind",
+        "the-hunger-games"
+      ]
+    },
+    {
+      "id": "quick-read",
+      "label": "I want a quick read",
+      "bookSlugs": [
+        "beach-read",
+        "the-hunger-games",
+        "malgudi-days",
+        "eleanor-and-park"
+      ]
+    }
+  ],
+  "diaryEntries": [
+    {
+      "date": "A rainy Sunday",
+      "text": "I started my first book review in a notebook with a cracked spine, mostly to stop forgetting the names of the characters. Years later the notebook is still the most honest shelf I own.",
+      "bookSlug": "yaar-papa"
+    },
+    {
+      "date": "Late in the spring",
+      "text": "I learned to read slowly. Some books need a chapter a night, a pencil in hand and a cup of tea that goes cold while you forget to drink it.",
+      "bookSlug": "the-god-of-small-things"
+    },
+    {
+      "date": "Last autumn",
+      "text": "I began sharing these notes with strangers who became friends. If a line here made you pause, I would love to hear which one.",
+      "bookSlug": "piranesi"
+    }
+  ]
+}
