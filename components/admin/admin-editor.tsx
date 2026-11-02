@@ -2,7 +2,7 @@
 
 import { useState, type ComponentType } from 'react';
 import { normalizeContent } from '@/lib/content';
-import { triggerRedeploy, writeContentFile } from '@/lib/github-content';
+import { recordPublish, writeContentFile } from '@/lib/github-content';
 import type { SiteContent } from '@/lib/content/schema';
 import type { FormProps } from '@/components/admin/admin-ui';
 import { SiteForm } from '@/components/admin/forms/site-form';
@@ -69,7 +69,7 @@ function downloadContent(content: SiteContent) {
 type PublishStatus =
   | { state: 'idle' }
   | { state: 'publishing' }
-  | { state: 'done'; commitUrl: string; redeployed: boolean }
+  | { state: 'done'; commitUrl: string; siteCommitUrl?: string; warning?: string }
   | { state: 'error'; message: string };
 
 export function AdminEditor({
@@ -106,8 +106,16 @@ export function AdminEditor({
     setStatus({ state: 'publishing' });
     try {
       const commitUrl = await writeContentFile(token, content);
-      const redeployed = await triggerRedeploy(token).catch(() => false);
-      setStatus({ state: 'done', commitUrl, redeployed });
+      try {
+        const siteCommitUrl = await recordPublish(token, commitUrl);
+        setStatus({ state: 'done', commitUrl, siteCommitUrl });
+      } catch (caught) {
+        setStatus({
+          state: 'done',
+          commitUrl,
+          warning: caught instanceof Error ? caught.message : 'Publish history could not be committed.',
+        });
+      }
     } catch (caught) {
       setStatus({ state: 'error', message: caught instanceof Error ? caught.message : 'Publishing failed.' });
     }
@@ -155,13 +163,16 @@ export function AdminEditor({
       <div aria-live="polite">
         {status.state === 'done' && (
           <p className="rounded-sm border border-parchment-300 bg-parchment-50 p-4 font-body text-sm text-ink-700">
-            {status.redeployed
-              ? 'Published. The live site is rebuilding and will show the new content in a minute or two.'
-              : 'Saved to GitHub, but the site rebuild could not be started. Give the token Actions access on Bookish-Aspirant, or run the Deploy workflow manually.'}{' '}
+            {status.siteCommitUrl
+              ? 'Published. History committed to Bookish-Aspirants/main. The push should trigger deployment; check GitHub Actions for progress.'
+              : `Content saved to GitHub, but the site history commit failed. ${status.warning}`}{' '}
             {status.commitUrl && (
               <a href={status.commitUrl} target="_blank" rel="noreferrer" className="underline">
-                View commit
+                View content commit
               </a>
+            )}
+            {status.siteCommitUrl && (
+              <>{' '}<a href={status.siteCommitUrl} target="_blank" rel="noreferrer" className="underline">View site commit</a></>
             )}
           </p>
         )}
