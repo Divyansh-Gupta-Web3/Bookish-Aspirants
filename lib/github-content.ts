@@ -4,11 +4,10 @@ const CONTENT_FILE = 'site-content.enc.json';
 const CONTENT_BRANCH = 'main';
 
 const SITE_REPO = 'Bookish-Aspirants';
-const SITE_WORKFLOW = 'nextjs.yml';
 const SITE_BRANCH = 'main';
 
 const CONTENTS_URL = `https://api.github.com/repos/${CONTENT_OWNER}/${CONTENT_REPO}/contents/${CONTENT_FILE}`;
-const DISPATCH_URL = `https://api.github.com/repos/${CONTENT_OWNER}/${SITE_REPO}/actions/workflows/${SITE_WORKFLOW}/dispatches`;
+const HISTORY_URL = `https://api.github.com/repos/${CONTENT_OWNER}/${SITE_REPO}/contents/content/publish-history.json`;
 
 export const TOKEN_STORAGE_KEY = 'bookish-admin-token';
 
@@ -67,11 +66,42 @@ export async function writeContentFile(token: string, content: unknown): Promise
   return result.commit.html_url;
 }
 
-export async function triggerRedeploy(token: string): Promise<boolean> {
-  const response = await fetch(DISPATCH_URL, {
-    method: 'POST',
-    headers: { ...headers(token), 'Content-Type': 'application/json' },
-    body: JSON.stringify({ ref: SITE_BRANCH }),
+export async function recordPublish(token: string, contentCommitUrl: string): Promise<string> {
+  const existing = await fetch(`${HISTORY_URL}?ref=${SITE_BRANCH}`, {
+    headers: headers(token),
+    cache: 'no-store',
   });
-  return response.status === 204;
+  let sha: string | undefined;
+  let history: { publishedAt: string; contentCommitUrl: string }[] = [];
+  if (existing.ok) {
+    const file = (await existing.json()) as { sha: string; content: string };
+    sha = file.sha;
+    const parsed: unknown = JSON.parse(decodeBase64Utf8(file.content));
+    if (!Array.isArray(parsed) || !parsed.every((entry) =>
+      entry && typeof entry.publishedAt === 'string' && typeof entry.contentCommitUrl === 'string'
+    )) {
+      throw new Error('Publish history is invalid; it was not overwritten.');
+    }
+    history = parsed;
+  } else if (existing.status !== 404) {
+    throw new Error(`Could not read publish history (HTTP ${existing.status}). Check Contents access on Bookish-Aspirants.`);
+  }
+
+  const publishedAt = new Date().toISOString();
+  history.push({ publishedAt, contentCommitUrl });
+  const response = await fetch(HISTORY_URL, {
+    method: 'PUT',
+    headers: { ...headers(token), 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      message: `Publish site content (${publishedAt})`,
+      content: encodeBase64Utf8(`${JSON.stringify(history, null, 2)}\n`),
+      sha,
+      branch: SITE_BRANCH,
+    }),
+  });
+  if (!response.ok) {
+    throw new Error(`Could not commit publish history (HTTP ${response.status}). Check Contents write access on Bookish-Aspirants; the main branch must allow this commit.`);
+  }
+  const result = (await response.json()) as { commit: { html_url: string } };
+  return result.commit.html_url;
 }
